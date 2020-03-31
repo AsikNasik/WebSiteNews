@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News&Articles</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/js" href="js/bootstrap.min.js" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="http://xn--_-7sbbf2b7bj7b/css/font-awesome.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body onload="giveAttributes()">
+    <img id="myImgLeft" src="Pictures/catLeft.png" />
+    <img id="myImgRight" src="Pictures/catRight.png" />
+
+    <section class="head">
+      <div class="header">
+        <h1>
+          <a href="index.html"
+            ><span>N</span>ews &<br /><span>A</span>rticles</a
+          >
+        </h1>
+      </div>
+    </section>
+    <section class="content">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-8">
+          <div class="question">
+            <h3>
+              <span>H</span>ave a question? <br /><span>C</span>ontact us!
+            </h3>
+          </div>
+
+          <table class="table" id="tableID">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Developer's name</th>
+                <th scope="col">Gmail</th>
+                <th scope="col">Skype</th>
+                <th scope="col">Telegram</th>
+                <th scope="col">Instagram</th>
+              </tr>
+            </thead>
+            <tbody id="tagBody">
+              <tr>
+                <td>
+                  <button name="editFunc" class="editF" onclick="edit(this.id)">
+                    E
+                  </button>
+                </td>
+                <td>
+                  <button name="delFunc" class="delF" onclick="delte(this.id)">
+                    D
+                  </button>
+                </td>
+                <td contenteditable="false">Анастасия Андреева</td>
+                <td contenteditable="false">anastasiia.andrieieva@nure.ua</td>
+                <td contenteditable="false">andreeva2606</td>
+                <td contenteditable="false">@Asik_Nasik</td>
+                <td contenteditable="false">@anastasya_adreeva</td>
+              </tr>
+              <tr>
+                <td>
+                  <button name="editFunc" class="editF" onclick="edit(this.id)">
+                    E
+                  </button>
+                </td>
+                <td>
+                  <button name="delFunc" class="delF" onclick="delte(this.id)">
+                    D
+                  </button>
+                </td>
+                <td contenteditable="false">Карина Темчур</td>
+                <td contenteditable="false">karyna.temchur@nure.ua</td>
+                <td contenteditable="false">devillyna</td>
+                <td contenteditable="false">@devillyna</td>
+                <td contenteditable="false">@karin.m.weiss</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div id="modal" class="addPerson">
+            <form class="hidden" onsubmit="return false">
+              <h3 id="mainTh">
+                <span>A</span>ddition<span class="close">&times;</span>
+              </h3>
+              <input
+                id="name"
+                type="text"
+                required
+                placeholder="Name"
+                autocomplete="off"
+              />
+              <br />
+              <input
+                id="gmail"
+                type="text"
+                required
+                placeholder="Gmail"
+                autocomplete="off"
+              />
+              <br />
+              <input
+                id="skype"
+                type="text"
+                placeholder="Skype"
+                autocomplete="off"
+              />
+              <br />
+              <input
+                id="telegram"
+                type="text"
+                placeholder="Telegram"
+                autocomplete="off"
+              />
+              <br />
+              <input
+                id="instagram"
+                type="text"
+                placeholder="Instagram"
+                autocomplete="off"
+              />
+              <br />
+              <button id="add" class="addF" onclick="addition()">Add</button>
+            </form>
+          </div>
+          <div id="bg_layer"></div>
+          <button
+            class="buttonAddPerson"
+            id="addContactPerson"
+            onclick="addContactPerson()"
+          >
+            Add person
+          </button>
+
+          <div id="bg_layerE"></div>
+          <div id="modalE" class="editPerson">
+            <form class="fEdit" onsubmit="return false">
+              <h3 id="mainTh">
+                <span>E</span>diting<span class="closeE">&times;</span>
+              </h3>
+              <input
+                id="nameE"
+                type="text"
+                required
+                placeholder="Name"
+                autocomplete="off"
+              />
+              <br />
+              <input
+                id="gmailE"
+                type="text"
+                required
+                placeholder="Gmail"
+                autocomplete="off"
+              />
+              <br />
+              <input
+                id="skypeE"
+                type="text"
+                placeholder="Skype"
+                autocomplete="off"
+              />
+              <br />
+              <input
+                id="telegramE"
+                type="text"
+                placeholder="Telegram"
+                autocomplete="off"
+              />
+              <br />
+              <input
+                id="instagramE"
+                type="text"
+                placeholder="Instagram"
+                autocomplete="off"
+              />
+              <br />
+              <button id="editE" class="saveF" onclick="save()">
+                Edit
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-2 menu">
+          <nav class="nav_menu">
+            <ul class="main_menu">
+              <li class="main_menu_li">
+                <a href="aboutUs.html"><span>A</span>bout us</a>
+              </li>
+              <li class="main_menu_li">
+                <a href="index.html"><span>C</span>ategories</a>
+                <ul class="second_menu">
+                  <li>
+                    <a href="index.html"><span>S</span>port</a>
+                  </li>
+                  <li>
+                    <a href="index.html"><span>I</span>T</a>
+                  </li>
+                  <li>
+                    <a href="index.html"><span>B</span>eauty</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main_menu_li">
+                <a href="contact.html"><span>C</span>ontacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="nav">
+        <a href="aboutUs.html">About us</a>
+        <a href="index.html">Categories</a>
+        <a href="index.html">Sport</a>
+        <a href="index.html">IT</a>
+        <a href="index.html">Beauty</a>
+        <a href="contact.html">Contacts</a>
+      </div>
+      <div class="social"></div>
+      <div class="copyright">
+        <p>© Copyright <br />All rights reserved</p>
+      </div>
+    </section>
+    <script src="PageScripts/events.js"></script>
+  </body>
+</html>

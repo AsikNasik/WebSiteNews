@@ -1,0 +1,510 @@
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+span {
+  color: rgb(14, 128, 114);
+}
+
+section.head .header a {
+  text-decoration: none;
+  color: white;
+}
+
+section.head .header h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  padding: 120px;
+  margin: 0;
+}
+
+section.head .header {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+section.content {
+  padding: 60px 0;
+  position:relative;
+}
+
+section.content .news_header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+section.content .animations_news img {
+  height: 200px;
+  width: 264px;
+}
+
+section.content .contect_news {
+  background-color: rgb(241, 241, 241);
+  padding: 0px 20px 0px 20px;
+}
+
+section.content .contect_news .btnn{
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(14, 128, 114);
+  font-weight: 700;
+  font-size: 17px;
+  padding: 0px;
+  display: inline;
+  vertical-align: baseline;
+}
+
+section.content .contect_news .btnn:hover {
+  color: black;
+}
+
+section.content .contect_news h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  color: rgb(14, 128, 114);
+  margin: 10px 0 5px 0;
+
+}
+
+section.content .contect_news p {
+  font-size: 16px;
+  color: black;
+  text-align: justify;
+  margin: 0px;
+}
+
+section.content .animations_news video {
+  height: 200px;
+  width: 264px;
+  margin-top: -25px;
+}
+
+section.content .animations_news audio {
+  padding-top: 80px;
+}
+
+section.content .menu ul li {
+  list-style: none;
+}
+
+.col-lg-2 {
+  background-color: black;
+}
+
+section.content .menu {
+  padding: 20px 10px;
+}
+
+section.content .menu ul li a {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+section.content .menu ul li {
+  padding: 6px 0px;
+  text-align: right;
+}
+
+section.content .menu ul li a:hover {
+  text-decoration: none;
+  font-size: 33px;
+  color: rgb(14, 128, 114);
+  transition: 0.5s;
+}
+
+section.footer {
+  background-color: black;
+  width: 100%;
+}
+
+section.footer .nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  border-right: 1.5px solid white;
+  padding: 10px;
+  align-items: center;
+}
+
+section.footer .nav a:nth-child(6) {
+  border: none;
+}
+
+section.footer .nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+section.footer .nav a:hover {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(14, 128, 114);
+  transition: 0.5s;
+}
+
+section.footer .copyright {
+  background-color: rgb(12, 128, 114);
+  padding: 3px;
+}
+
+section.footer .copyright p {
+  text-align: center;
+  font-size: 14px;
+  padding: 3px;
+}
+
+section.content .photoAbout img {
+  height: 200px;
+  width: 264px;
+  float: right;
+  margin: 15px;
+}
+
+section.content .infoWN h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+section.content .infoWN span {
+  color: rgb(14, 128, 114);
+}
+
+section.content .infoWN {
+  background-color: rgb(241, 241, 241);
+  padding: 20px;
+}
+
+section.content .informationSite {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+section.content .infoWN p {
+  font-size: 18px;
+  padding-left: 5px;
+  color: black;
+  text-align: justify;
+  margin: 0;
+}
+
+section.content .videoWN {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+
+section.content .videoWN video {
+  height: 280px;
+  width: 450px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section.content .table {
+  font-size: 14;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+  color: black;
+  margin-right: 7px;
+}
+
+th::first-letter {
+  color: rgb(14, 128, 114);
+}
+
+section.content .question h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+section.content .table td {
+  font-size: 14px;
+}
+
+section.content .table th {
+  font-size: 16px;
+}
+
+section.content .table thead th {
+    vertical-align: middle;
+    border-bottom: 3px solid white;
+}
+
+section.content .table th {
+    padding: .55rem;
+    vertical-align: middle;
+    border-top: 2px solid white;
+
+}
+
+section.content .table td:nth-child(1), .table td:nth-child(2) {
+    padding: 0;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    width: 30px;
+}
+
+section.content .question .layer {
+  background-color: red;
+  z-index: 1;
+}
+
+section.content .menu {
+  position: relative;
+}
+
+section.content .main_menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+section.content .main_menu_li .second_menu {
+  width: 100%;
+  left: 0;
+  max-height: 0;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 0;
+}
+
+section.content .main_menu_li:hover .second_menu {
+  max-height: 500px;
+  transition: 1.5s;
+}
+
+section.content .contect_news #more1, #more2, #more3 {
+  display: none;
+}
+
+section.content .btnEditPerson {
+  color: rgb(14,128,114);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 3px;
+  vertical-align: baseline;
+}
+
+section.content .more {
+  color: black;
+  font-size: 16px;
+}
+
+p{
+  text-indent: 30px;
+}
+
+.showHide {
+  display: none;
+}
+
+.more span {
+  display: inline;
+}
+
+section.content .buttonAddPerson{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  width: 120px;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+}
+
+section.content .buttonAddPerson:hover {
+  background-color: rgb(14,128,114);
+  color: black;
+  border: 4px solid black;
+  font-weight: 700;
+}
+
+section.content #modal {
+  position: absolute;
+  z-index: 20;
+  width: 800px;
+  height: 408px;
+  top: 0px;
+  border: 2px solid #900;
+  text-align: center;
+  background-color: rgba(0,0,0,0.4);
+  display: none;
+}
+
+section.content  #modalE {
+  position: absolute;
+  z-index: 20;
+  width: 800px;
+  height: 408px;
+  top: 0px;
+  border: 2px solid #900;
+  text-align: center;
+  background-color: rgba(0,0,0,0.4);
+  display: none;
+}
+
+section.content #bg_layer{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 15;
+  background-color: rgba(0,0,0,0.4);
+}
+
+section.content #bg_layerE{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 15;
+  background-color: rgba(0,0,0,0.4);
+}
+
+section.content .hidden, .fEdit{
+  background-color: grey;
+  width: 796px;
+  height: 404px;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.9);
+  color: black;
+}
+
+section.content .hidden input, .fEdit input{
+  border-color: rgb(14,128,114);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(14, 128, 114, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 3px rgba(14, 128, 114, 0.6);
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+}
+
+section.content .hidden #mainTh, .fEdit #mainTh {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+section.content .close, .closeE {
+  color: grey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-right: 20px;
+  margin-top: -6px;
+}
+
+section.content .close:hover, .closeE:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section.content .delF, .editF {
+  margin: 0;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: inherit;
+  background-color: rgb(14, 128, 114);
+  border: 2px solid black; 
+  height: 25px;
+  width: 30px;
+  font-weight: 700;
+}
+
+section.content .delF:hover {
+  background-color: #900;
+}
+
+section.content .editF:hover {
+  background-color: blue;
+}
+
+section.content .addF, .saveF {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  width: 120px;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 40px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+section.content .addF:hover, .saveF:hover {
+  background-color: rgb(14,128,114);
+  color: black;
+  border: 4px solid black;
+  font-weight: 700;
+}
+
+#myImgRight, #myImgLeft {
+  position: absolute;
+  width: 50px; 
+  height: 50px; 
+  z-index: 1;
+  display: none;
+}
+
+.legs {
+  position: absolute;
+  width: 10px; 
+  height: 10px;
+  display: none;
+}
+
+.row {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
